@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.EventDetailsActivity">
+
+    <!-- Toolbar My Events. -->
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/tb_myEvents"
+            android:background="@color/colorAlabaster"
+            android:elevation="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            tools:targetApi="lollipop"/>
+
+    <!-- Name Event. -->
+    <TextView
+            android:id="@+id/tv_eventName"
+            android:text="Projeto de app - LPE01|0009"
+            android:textSize="18sp"
+            android:textColor="@color/colorDoveGray"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <!-- Info Event. -->
+    <TableLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+        <!-- Location. -->
+        <TableRow
+                android:weightSum="2"
+                android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <ImageView
+                    android:src="@drawable/ic_local"
+                    android:layout_weight="0.2"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/tv_location"
+                    android:textColor="@color/colorDoveGray"
+                    android:text="UCB - R001B"
+                    android:layout_marginStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.8"
+                    android:layout_width="0dp" android:layout_height="wrap_content"/>
+        </TableRow>
+
+        <!-- Date. -->
+        <TableRow
+                android:weightSum="2"
+                android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <ImageView
+                    android:src="@drawable/ic_hora"
+                    android:layout_weight="0.2"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/tv_date"
+                    android:textColor="@color/colorPrimary"
+                    android:text="08 de Julho de 2019, 09:00 - 17:30"
+                    android:layout_marginStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.8"
+                    android:layout_width="0dp" android:layout_height="wrap_content"/>
+        </TableRow>
+    </TableLayout>
+
+    <!-- Button Check-In -->
+    <Button
+            android:id="@+id/bt_checkIn"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:text="@string/bt_checkIn"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:context=".activities.CreateEventActivity">
+
+    <!-- Toolbar My Events. -->
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/tb_myEvents"
+            android:background="@color/colorAlabaster"
+            android:elevation="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            tools:targetApi="lollipop"/>
+
+    <!-- Container Fragments. -->
+    <FrameLayout
+            android:id="@+id/fl_fragmentsSteps"
+            android:layout_above="@+id/ll_stepsContainer"
+            android:layout_below="@+id/tb_myEvents"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <!-- Steps configuration. -->
+    <LinearLayout
+            android:id="@+id/ll_stepsContainer"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize">
+
+        <!-- Prev. -->
+        <TextView
+                android:id="@+id/tv_prev"
+                android:text="@string/bt_prev"
+                android:textSize="14sp"
+                android:textColor="@color/colorDoveGray"
+                android:gravity="start|center"
+                android:layout_weight="1.1"
+                android:paddingStart="30dp"
+                android:layout_width="0dp" android:layout_height="match_parent"
+                android:layout_alignTop="@+id/ll_stepsContainer" android:layout_alignStart="@+id/ll_stepsContainer"/>
+
+        <!-- Steps. -->
+        <ImageView
+                android:id="@+id/iv_steps"
+                android:src="@drawable/ic_step1"
+                android:foregroundGravity="center"
+                android:layout_weight="0.8"
+                android:layout_width="0dp" android:layout_height="match_parent"/>
+
+        <!-- Next. -->
+        <TextView
+                android:id="@+id/tv_next"
+                android:text="@string/bt_next"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:layout_weight="1.1"
+                android:layout_width="0dp" android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</RelativeLayout>

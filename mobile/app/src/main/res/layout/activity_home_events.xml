@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.HomeEventsActivity">
+
+    <!-- Button Clear Preferences. -->
+    <Button
+            android:id="@+id/bt_clearPreferences"
+            android:background="@color/colorTorchRed"
+            android:text="@string/bt_clearPreferences"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <!-- Welcome, User! -->
+    <TextView
+            android:id="@+id/tv_welcomeUser"
+            android:text="@string/tv_welcomeUser"
+            android:textSize="14sp"
+            android:textColor="@color/colorDoveGray"
+            android:gravity="center"
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <!-- My Events. -->
+    <TextView
+            android:id="@+id/tv_titleMyEvents"
+            android:text="@string/tv_titleMyEvents"
+            android:textSize="25sp"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/tv_welcomeUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <!-- No Events Found. -->
+    <LinearLayout
+            android:id="@+id/ll_noEventContainer"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="60dp"
+            android:layout_below="@id/tv_titleMyEvents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:src="@drawable/ic_desk"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+
+        <TextView
+                android:id="@+id/tv_eventNotFound"
+                android:text="@string/tv_eventNotFound"
+                android:textSize="16sp"
+                android:textColor="@color/colorDoveGray"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- Events Found. -->
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_events"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_below="@id/tv_titleMyEvents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <!-- Create event. -->
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_newEvent"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add" />
+
+</RelativeLayout>

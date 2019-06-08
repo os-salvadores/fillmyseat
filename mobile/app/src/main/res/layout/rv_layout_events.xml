@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/parentLayout"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <!-- Title Event. -->
+    <TextView
+            android:id="@+id/tv_nameEvent"
+            android:text="Design de App - LPE01|008"
+            android:textSize="16sp"
+            android:textColor="@color/colorDoveGray"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <!-- Date. -->
+    <TextView
+            android:id="@+id/tv_date"
+            android:text="15 JUN, 9:00"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <!-- Location. -->
+    <TextView
+            android:id="@+id/tv_location"
+            android:text="UCB - R01B"
+            android:textSize="16sp"
+            android:textColor="@color/colorDoveGray"
+            android:layout_marginBottom="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+</LinearLayout>

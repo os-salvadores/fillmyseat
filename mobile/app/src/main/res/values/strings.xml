@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">FillMySeat</string>
+
+    <string name="et_email">E-mail</string>
+    <string name="et_password">Senha</string>
+    <string name="bt_login">Login</string>
+    <string name="tv_forgotPass">Esqueci minha senha</string>
+    <string name="tv_newHere">Novo aqui?&#160;&#160;</string>
+    <string name="tv_Register">Cadastre-se</string>
+
+    <string name="tv_titleCreateAccount">Crie sua conta</string>
+    <string name="et_firstName">Nome</string>
+    <string name="et_lastName">Sobrenome</string>
+    <string name="bt_register">Concluir</string>
+
+    <string name="tv_welcomeUser">Olá,</string>
+    <string name="tv_titleMyEvents">Meus Eventos</string>
+    <string name="tv_eventNotFound">Não há nenhum evento cadastrado na sua agenda. Clique em \"Criar Evento\" para
+        adicionar um novo.
+    </string>
+    <string name="bt_createEvent">Criar Evento</string>
+
+    <string name="tv_step_step">Passo&#160;</string>
+    <string name="tv_step_of">&#160;de&#160;</string>
+    <string name="tv_titleEventName">Nomeie seu evento</string>
+    <string name="tv_eventNameDesc">Dê um nome ao seu evento para que seja encontrado facilmente.</string>
+    <string name="et_nameEvent">Nome</string>
+    <string name="bt_next">Continuar</string>
+    <string name="bt_cancel">Cancelar</string>
+    <string name="bt_prev">Voltar</string>
+
+    <string name="tv_titleEventDuration">Duração</string>
+    <string name="tv_eventDurationDesc">Defina uma data para o seu evento. Você pode adicionar quantas datas quiser.
+    </string>
+
+    <string name="tv_titleEventParticipants">Participantes</string>
+    <string name="tv_eventParticipantsDesc">Adicione as pessoas que irão assistir seu evento.</string>
+
+    <string name="et_search">Procurar</string>
+
+    <string name="bt_clearPreferences">Limpar histórico</string>
+    <string name="bt_checkIn">Check-In</string>
+
+</resources>

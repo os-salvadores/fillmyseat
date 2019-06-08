@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <!-- Loading theme. -->
+    <style name="LoadingTheme" parent="AppTheme.NoActionBar"/>
+
+    <!-- Colored back arrow. -->
+    <style name="ToolbarColored" parent="AppTheme.NoActionBar">
+        <item name="android:textColorPrimary">@color/colorDoveGray</item>
+        <item name="android:textColorSecondary">@color/colorDoveGray</item>
+    </style>
+
+    <!-- Colored Checkbox -->
+    <style name="CheckboxColored" parent="AppTheme.NoActionBar">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textColorSecondary">@color/colorDoveGray</item>
+    </style>
+</resources>
